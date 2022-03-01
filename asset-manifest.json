@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/barcode_nickname_generator/static/css/main.9f4c8792.css",
+    "main.js": "/barcode_nickname_generator/static/js/main.f7791e9b.js",
+    "index.html": "/barcode_nickname_generator/index.html",
+    "main.9f4c8792.css.map": "/barcode_nickname_generator/static/css/main.9f4c8792.css.map",
+    "main.f7791e9b.js.map": "/barcode_nickname_generator/static/js/main.f7791e9b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9f4c8792.css",
+    "static/js/main.f7791e9b.js"
+  ]
+}
