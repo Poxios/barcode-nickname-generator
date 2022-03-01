@@ -50,10 +50,10 @@ function App() {
         <div className="infoBox">
           Q. What is barcode nickname?
           <br />
-          <b>A. Barcode nickname is string made with 'l' and 'I'.</b>
+          <b>A. Barcode nickname is a string made with 'l' and 'I'.</b>
           <br />
           <br />
-          &nbsp;&nbsp;Small 'L' and large 'i' are very hard to distinguish with naked eye, so you can prevent to be identified via nickname easy!
+          &nbsp;&nbsp;Small 'L' and large 'i' are very hard to distinguish with naked eye, so you can prevent being identified via nickname easy!
           <br />
           <br />
           <br />
@@ -62,7 +62,7 @@ function App() {
           <b>A. The number of cases that can be combined with this is more than you might think.</b>
           <br />
           <br />
-          &nbsp;&nbsp;Nickname made with 'l' and 'I' in 10 letters -> 2<sup>10</sup>=1,024 cases<br />
+          &nbsp;&nbsp;Nicknames made with 'l' and 'I' in 10 letters -> 2<sup>10</sup>=1,024 cases<br />
           &nbsp;&nbsp;in 14 letters -> 2<sup>14</sup>=16,384 cases
 
         </div>
