@@ -8,6 +8,10 @@
   padding: 16px;
   align-items: center;
 }
+.infoBox{
+  margin: 56px 0;
+  line-height: 32px;
+}
 .copyAlertBox {
   display: none;
   color: #155724;

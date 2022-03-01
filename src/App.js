@@ -3,6 +3,7 @@ import md5 from 'md5';
 import { useState } from 'react'
 import './App.css'
 import { barcodeGen } from './barcodeGen';
+import GitHubButton from 'react-github-btn'
 
 function App() {
   const [barcodeId, setBarcodeId] = useState(barcodeGen({}));
@@ -15,15 +16,13 @@ function App() {
   return (
     <div className="body">
       <div className="navBar">
+        <img src={'./android-icon-144x144.png'} alt="Main Icon" style={{ height: '32px', marginRight: '16px' }} />
         Random Barcode Nickname Generator
       </div>
       <div className="contentBox">
-        <div className="infoBox">
-          Use barcode name made with l (small 'L'), I (large 'i') to prevent to be identified via nickname!
-        </div>
-        <a className="github-button" href="https://github.com/Poxios/barcode_nickname_generator" data-size="large" aria-label="Star Poxios/barcode_nickname_generator on GitHub">Star</a>
+        <GitHubButton href="https://github.com/Poxios/barcode_nickname_generator" data-size="large" data-show-count="true" aria-label="Star Poxios/barcode_nickname_generator on GitHub">Star</GitHubButton>
         <div className="copyAlertBox">
-          Copied!
+          Copied to clipboard!
         </div>
         <CopyToClipboard text={barcodeId}>
           <input className="resultInput" value={barcodeId} readOnly onClick={() => {
@@ -46,9 +45,27 @@ function App() {
         </div>
         <div>
           <input id="radio3" type="checkbox" onChange={() => setOptions(prev => ({ ...prev, genLonger: !prev.genLonger }))} />
-          <label htmlFor="radio3">Generate longer</label>
+          <label htmlFor="radio3">Generate longer (14 letters)</label>
         </div>
+        <div className="infoBox">
+          Q. What is barcode nickname?
+          <br />
+          <b>A. Barcode nickname is string made with 'l' and 'I'.</b>
+          <br />
+          <br />
+          &nbsp;&nbsp;Small 'L' and large 'i' are very hard to distinguish with naked eye, so you can prevent to be identified via nickname easy!
+          <br />
+          <br />
+          <br />
+          Q. Is it unique?
+          <br />
+          <b>A. The number of cases that can be combined with this is more than you might think.</b>
+          <br />
+          <br />
+          &nbsp;&nbsp;Nickname made with 'l' and 'I' in 10 letters -> 2<sup>10</sup>=1,024 cases<br />
+          &nbsp;&nbsp;in 14 letters -> 2<sup>14</sup>=16,384 cases
 
+        </div>
       </div>
       <div className="footer">
         Made by <a href="https://github.com/Poxios">@Poxios</a>, 2022
