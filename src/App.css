@@ -1,0 +1,39 @@
+.navBar {
+  flex: 1;
+  height: 32px;
+  color: white;
+  font-weight: bold;
+  background-color: #333;
+  display: flex;
+  padding: 16px;
+  align-items: center;
+}
+.copyAlertBox {
+  display: none;
+  color: #155724;
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+  padding: 16px 32px;
+  margin: 16px;
+}
+.resultInput {
+  font-size: 32px;
+  text-align: center;
+  padding: 8px 0;
+  cursor: pointer;
+}
+.contentBox {
+  max-width: 1024px;
+  margin: 0 auto;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+.footer {
+  background-color: rgb(245, 245, 245);
+  padding: 32px;
+}
