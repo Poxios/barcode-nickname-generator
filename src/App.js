@@ -1,9 +1,11 @@
+
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import md5 from 'md5';
 import { useState } from 'react'
 import './App.css'
 import { barcodeGen } from './barcodeGen';
 import GitHubButton from 'react-github-btn'
+import { gtag } from 'ga-gtag';
 
 function App() {
   const [barcodeId, setBarcodeId] = useState(barcodeGen({}));
@@ -33,6 +35,7 @@ function App() {
           MD5: {md5(barcodeId)}
         </div>
         <button className="genButton" onClick={() => {
+          gtag('event', 'clicked_generate_button', options)
           setBarcodeId(barcodeGen(options))
         }}>Generate!</button>
         <div>
