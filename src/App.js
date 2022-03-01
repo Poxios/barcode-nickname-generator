@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="body">
       <div className="navBar">
-        <img src={'./android-icon-144x144.png'} alt="Main Icon" style={{ height: '32px', marginRight: '16px' }} />
+        <img src={'barcode_nickname_generator/android-icon-144x144.png'} alt="Main Icon" style={{ height: '32px', marginRight: '16px' }} />
         Random Barcode Nickname Generator
       </div>
       <div className="contentBox">
