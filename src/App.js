@@ -1,5 +1,6 @@
+import { CopyToClipboard } from 'react-copy-to-clipboard';
 import md5 from 'md5';
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import './App.css'
 import { barcodeGen } from './barcodeGen';
 
@@ -18,20 +19,22 @@ function App() {
       </div>
       <div className="contentBox">
         <div className="infoBox">
-          Use barcode name made with l (small L), I (large I) to prevent to be identified via nickname!
+          Use barcode name made with l (small 'L'), I (large 'i') to prevent to be identified via nickname!
         </div>
+        <a className="github-button" href="https://github.com/Poxios/barcode_nickname_generator" data-size="large" aria-label="Star Poxios/barcode_nickname_generator on GitHub">Star</a>
         <div className="copyAlertBox">
           Copied!
         </div>
-        <input className="resultInput" value={barcodeId} readOnly onClick={() => {
-          document.getElementsByClassName('copyAlertBox')[0].style.display = 'block'
-        }} />
+        <CopyToClipboard text={barcodeId}>
+          <input className="resultInput" value={barcodeId} readOnly onClick={() => {
+            document.getElementsByClassName('copyAlertBox')[0].style.display = 'block'
+          }} />
+        </CopyToClipboard>
         <div className="md5Box">
           MD5: {md5(barcodeId)}
         </div>
         <button className="genButton" onClick={() => {
           setBarcodeId(barcodeGen(options))
-
         }}>Generate!</button>
         <div>
           <input id="radio1" type="checkbox" onChange={() => setOptions(prev => ({ ...prev, useLowerCaseI: !prev.useLowerCaseI }))} />
@@ -43,7 +46,7 @@ function App() {
         </div>
         <div>
           <input id="radio3" type="checkbox" onChange={() => setOptions(prev => ({ ...prev, genLonger: !prev.genLonger }))} />
-          <label htmlFor="radio3">Longer nickname</label>
+          <label htmlFor="radio3">Generate longer</label>
         </div>
 
       </div>
