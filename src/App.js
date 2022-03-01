@@ -19,7 +19,7 @@ function App() {
     <div className="body">
       <div className="navBar">
         <img src={process.env.PUBLIC_URL + '/android-icon-144x144.png'} alt="Main Icon" style={{ height: '32px', marginRight: '16px' }} />
-        Random Barcode Nickname Generator
+        Random Barcode Nickname Generator Online
       </div>
       <div className="contentBox">
         <GitHubButton href="https://github.com/Poxios/barcode_nickname_generator" data-size="large" data-show-count="true" aria-label="Star Poxios/barcode_nickname_generator on GitHub">Star</GitHubButton>
