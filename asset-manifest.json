@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/barcode_nickname_generator/static/css/main.9f4c8792.css",
-    "main.js": "/barcode_nickname_generator/static/js/main.acc9bcf8.js",
-    "index.html": "/barcode_nickname_generator/index.html",
-    "main.9f4c8792.css.map": "/barcode_nickname_generator/static/css/main.9f4c8792.css.map",
-    "main.acc9bcf8.js.map": "/barcode_nickname_generator/static/js/main.acc9bcf8.js.map"
+    "main.css": "/barcode-nickname-generator/static/css/main.9f4c8792.css",
+    "main.js": "/barcode-nickname-generator/static/js/main.ec444582.js",
+    "index.html": "/barcode-nickname-generator/index.html",
+    "main.9f4c8792.css.map": "/barcode-nickname-generator/static/css/main.9f4c8792.css.map",
+    "main.ec444582.js.map": "/barcode-nickname-generator/static/js/main.ec444582.js.map"
   },
   "entrypoints": [
     "static/css/main.9f4c8792.css",
-    "static/js/main.acc9bcf8.js"
+    "static/js/main.ec444582.js"
   ]
 }
