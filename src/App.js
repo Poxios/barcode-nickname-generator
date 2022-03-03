@@ -22,7 +22,7 @@ function App() {
         Random Barcode Nickname Generator Online
       </div>
       <div className="contentBox">
-        <GitHubButton href="https://github.com/Poxios/barcode_nickname_generator" data-size="large" data-show-count="true" aria-label="Star Poxios/barcode_nickname_generator on GitHub">Star</GitHubButton>
+        <GitHubButton href="https://github.com/Poxios/barcode-nickname-generator" data-size="large" data-show-count="true" aria-label="Star Poxios/barcode-nickname-generator on GitHub">Star</GitHubButton>
         <div className="copyAlertBox">
           Copied to clipboard!
         </div>
